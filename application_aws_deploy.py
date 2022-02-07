@@ -1,9 +1,8 @@
 from flask import Flask
-applicaiton = Flask(__name__)
-
+application = Flask(__name__)
 @application.route('/')
 def hello_world():
-    return 'Sup. Subscribe'
+    return 'Hello world.'
 
-if __name__=="__main__":
+if __name__=='__main__':
     application.run()
